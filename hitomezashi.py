@@ -18,8 +18,6 @@ def A_to_0(v): #transforms str into 0 and 1
     return st
   
 def hitopatt(probL1 = 0.5 ,probL2 = 0.5): #defines hitomezashi pattern, rentre proba(entre 0.0 et 1) que soit 1
-    assert probL1 > 1 or probL1 < 0 is not True,("Le nombre doit etre entre 0 et 1")
-    assert probL2 > 2 or probL2 < 0 is not True,("Le nombre doit etre entre 0 et 1")
     pygame.init()
     screen = pygame.display.set_mode([500, 500])
     running = True
@@ -88,3 +86,5 @@ def hitopatt(probL1 = 0.5 ,probL2 = 0.5): #defines hitomezashi pattern, rentre p
         
         pygame.display.flip()
     pygame.quit()
+if __name__ == "__main__":
+    hitopatt() 
